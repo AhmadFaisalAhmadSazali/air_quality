@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "air_quality"
+version = "0.1.0"
+description = "End-to-end machine learning project using OpenAQ air quality data"
+authors = ["faisallitic@gmail.com"]
+readme = "README.md"
+packages = [{ include = "air_quality" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+python-dotenv = "^1.2.1"
+httpx = "^0.27.0"
+pandas = "^2.2.0"
+numpy = "^1.26.0"
+matplotlib = "^3.8.0"
+seaborn = "^0.13.0"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.0"
+black = "^24.1.0"
+ruff = "^0.1.15"
+mypy = "^1.8.0"
+isort = "^7.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
